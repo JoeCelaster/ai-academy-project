@@ -38,12 +38,25 @@ Whapi API (send reply to user)
 
 ---
 
-## 3. Webhook Trigger
+## 3. Tech Stack
 
-Whapi sends a POST request to (ngrok URL is used because whapi supports only production domains):
+| Technology | Purpose |
+|------------|---------|
+| **Express.js** | Backend web server and webhook endpoint |
+| **Whapi** | WhatsApp Business API for message receive/send |
+| **OpenRouter** | LLM API provider (access to OpenAI models) |
+| **Vercel** | Cloud deployment and hosting |
+| **TypeScript** | Type-safe development |
+| **Node.js** | Runtime environment |
+
+---
+
+## 4. Webhook Trigger
+
+Whapi sends a POST request to (Vercel Deployed URL is used because whapi supports only production domains):
 
 ```txt
-https://detection-umbrella-paddling.ngrok-free.dev/webhook
+https://ai-academy-project.onrender.com/webhook
 ```
 
 Sample payload:
@@ -62,7 +75,7 @@ Sample payload:
 
 ---
 
-## 4. Folder Structure
+## 5. Folder Structure
 
 ```txt
 src/
@@ -77,7 +90,7 @@ LLD.md
 
 ---
 
-## 5. File Responsibilities
+## 6. File Responsibilities
 
 **server.ts**
 
@@ -107,7 +120,7 @@ temperature: 0.7
 
 ---
 
-## 6. Avoiding Number Ban
+## 7. Avoiding Number Ban
 
 * Respond only to incoming messages
 * Ignore bot messages:
@@ -128,7 +141,7 @@ await delay(1000);
 
 ---
 
-## 7. AI API Control
+## 8. AI API Control
 
 * Limit output size (`max_tokens`)
 * Call LLM only for valid inputs
@@ -137,7 +150,7 @@ await delay(1000);
 
 ---
 
-## 8. User Entry Control
+## 9. User Entry Control
 
 ```ts
 if (message === "AI-Academy") {
