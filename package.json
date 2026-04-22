@@ -21,6 +21,7 @@
   "homepage": "https://github.com/JoeCelaster/ai-academy-project#readme",
   "dependencies": {
     "@openrouter/sdk": "^0.12.19",
+    "@types/node": "^25.6.0",
     "axios": "^1.15.2",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
@@ -29,7 +30,6 @@
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
-    "@types/node": "^25.6.0",
     "typescript": "^6.0.3"
   }
 }
