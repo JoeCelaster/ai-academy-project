@@ -1,5 +1,3 @@
-declare const process: any;
-
 import express from "express";
 import type { Request, Response } from "express";
 import { sendMessage } from "./whatsapp";
