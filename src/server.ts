@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 app.use("/webhook", webhookRouter);
 
-app.use("/", (req, res)=>{
+app.get("/", (req, res)=>{
     res.status(200).send("joe")
 })
 const PORT = process.env.PORT || 3000;

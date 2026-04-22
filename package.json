@@ -22,10 +22,14 @@
   "dependencies": {
     "@openrouter/sdk": "^0.12.19",
     "@types/node": "^25.6.0",
+    "and": "^0.0.3",
     "axios": "^1.15.2",
+    "build": "^0.1.4",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "nodemon": "^3.1.14",
+    "npm": "^11.12.1",
+    "run": "^1.5.0",
     "tsx": "^4.21.0"
   },
   "devDependencies": {
