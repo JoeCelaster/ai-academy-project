@@ -1,0 +1,31 @@
+{
+  "name": "ai-academy-project",
+  "version": "1.0.0",
+  "description": "Just a curious project !",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoeCelaster/ai-academy-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoeCelaster/ai-academy-project/issues"
+  },
+  "homepage": "https://github.com/JoeCelaster/ai-academy-project#readme",
+  "dependencies": {
+    "@openrouter/sdk": "^0.12.19",
+    "axios": "^1.15.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "tsx": "^4.21.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6"
+  }
+}
