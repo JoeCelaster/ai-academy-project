@@ -1,3 +1,5 @@
+declare const process: any;
+
 import axios from 'axios';
 
 export async function sendMessage(to:string, body:string): Promise<void>  {

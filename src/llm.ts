@@ -1,3 +1,5 @@
+declare const process: any;
+
 import axios from "axios";
 
 export async function askLLM(userMessage: string): Promise<string> {
