@@ -1,7 +1,7 @@
 import express from "express";
 import type { Request, Response } from "express";
-import { sendMessage } from "./whatsapp.ts";
-import { askLLM } from "./llm.ts";
+import { sendMessage } from "./whatsapp";
+import { askLLM } from "./llm";
 
 const router = express.Router();
 

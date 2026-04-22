@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 dotenv.config({ path: './.env' });
 
 import express from 'express';
-import webhookRouter from './webhook.ts';
+import webhookRouter from './webhook';
 
 
 const app = express()
