@@ -10,6 +10,7 @@ const activeUsers = new Set<string>();
 
 router.post("/", async (req: Request, res: Response) => {
   try {
+    console.log("🔥 WEBHOOK HIT");
     const msg = req.body?.messages?.[0];
 
     const message = msg?.text?.body;
