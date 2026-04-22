@@ -10,14 +10,14 @@ const activeUsers = new Set<string>();
 
 router.post("/", async (req: Request, res: Response) => {
   try {
-    console.log("🔥 WEBHOOK HIT");
+    console.log("WEBHOOK HIT");
     const msg = req.body?.messages?.[0];
 
-    const message = msg?.text?.body;
-    const from = msg?.from;
-    const isFromMe = msg?.from_me;
+    const message = msg?.text?.body; // take the msg by user given
+    const from = msg?.from; // take their phone number
+    const isFromMe = msg?.from_me; // is from me to me ? 
 
-    // ignore bot messages
+    // ignore bot messages (loop prevention)
     if (isFromMe) {
       return res.sendStatus(200);
     }
@@ -48,7 +48,8 @@ router.post("/", async (req: Request, res: Response) => {
 
     // 🤖 AI response
     const reply = await askLLM(message);
-    await sendMessage(from, reply);
+
+    await sendMessage(from, reply); // ( to whom the msg should go , what msg go )
 
     return res.sendStatus(200);
 
